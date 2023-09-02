@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Code Input</title>
+</head>
+<body>
+    <h1>Enter Country Code</h1>
+    <form method="post" action="">
+        {% csrf_token %}
+        <label for="country_code">Country Code:</label>
+        <input type="text" id="country_code" name="country_code" placeholder="Enter country code" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Country Code Input</title>
+</head>
+<body>
+    <h1>Enter Country Code</h1>
+    <form method="post" action="{% url 'process_country_code' %}">
+        {% csrf_token %}
+        <label for="country_code">Country Code:</label>
+        <input type="text" id="country_code" name="country_code" placeholder="Enter country code" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html> {% endcomment %}
