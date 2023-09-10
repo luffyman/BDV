@@ -1,0 +1,44 @@
+     /* Set the background image for the body */
+     body {
+        background-image: url('https://cdn.hackernoon.com/images/hhRGVOFgR2b2W9iWEwS7JBtZne43-zn93s3l.jpeg');
+        background-size: cover; /* Adjust as needed */
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed; /* Optional: Fixes the background while scrolling */
+        font-family: Arial, sans-serif; /* Optional: Define a font for the body text */
+        margin: 0; /* Optional: Remove default margin to ensure content fills the entire viewport */
+        padding: 0; /* Optional: Remove default padding */
+        height: 100vh; /* Optional: Ensure the body covers the entire viewport height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+
+    /* Add CSS styling for the header bar/navigation */
+    .header {
+        background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent black background to the header */
+        padding: 10px;
+        width: 100%;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #fff;
+        margin: 10px;
+    }
+
+    /* Add CSS styling for the button */
+    .button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }

@@ -2,10 +2,71 @@
 <html>
 <head>
     <title>Welcome to BDV</title>
+    <style>
+        /* Set the background image for the body */
+        body {
+            background-image: url('https://cdn.hackernoon.com/images/hhRGVOFgR2b2W9iWEwS7JBtZne43-r3a3snx.jpeg');
+            background-size: cover; /* Adjust as needed */
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed; /* Optional: Fixes the background while scrolling */
+            font-family: Arial, sans-serif; /* Optional: Define a font for the body text */
+            margin: 0; /* Optional: Remove default margin to ensure content fills the entire viewport */
+            padding: 0; /* Optional: Remove default padding */
+            height: 100vh; /* Optional: Ensure the body covers the entire viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Add CSS styling for the navigation bar */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            top: 0; /* Place the navbar at the top of the page */
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+        }
+
+        /* Add CSS styling for the button */
+        .button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to BDV!</h1>
-    <p>Instant IBAN and SWIFT number validation across the globe 🌎.</p>
-    <a href="{% url 'querydata:process_country_code' %}" class="button">Continue</a>
+    <!-- Navigation bar at the top of the page -->
+    <div class="navbar">
+        <a href="#section1" class="nav-link">About us</a>
+        <a href="#section2" class="nav-link">API doc 2</a>
+    </div>
+
+    <div style="margin-top: 50px;"> <!-- Adjust the margin-top as needed -->
+        <!-- Add the name of your project -->
+        <h1>Welcome to BDV!</h1>
+
+        <!-- Add a one-line phrase and/or description of your project -->
+        <p class="project-description">Instant IBAN and SWIFT number validation across the globe 🌎.</p>
+
+        <!-- Add the labeled button that navigates to the deployed project application -->
+        <a href="{% url 'querydata:process_country_code' %}" class="button">Continue</a>
+    </div>
 </body>
 </html>
