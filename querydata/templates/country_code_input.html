@@ -1,9 +1,61 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="{% static 'global.css' %}">
 <head>
     <title>Country Code Input</title>
+    <style>
+        /* Add CSS styling for the body */
+        body {
+            background-color: #f2f2f2; /* Gray background color */
+            color: #333; /* Darker text color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px; /* Add padding for better spacing */
+        }
+
+        /* Add CSS styling for the h1 element */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Add CSS styling for the form */
+        form {
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+            max-width: 400px;
+            margin: 0 auto; /* Center the form horizontally */
+        }
+
+        /* Add CSS styling for labels */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Add CSS styling for input fields */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            color: #333; /* Darker text color */
+        }
+
+        /* Add CSS styling for the submit button */
+        button[type="submit"] {
+            background-color: #fff; /* White background */
+            color: #007BFF; /* Text color matching your background color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h1>Enter Country Code</h1>
@@ -15,20 +67,3 @@
     </form>
 </body>
 </html>
-
-
-{% comment %} <!DOCTYPE html>
-<html>
-<head>
-    <title>Country Code Input</title>
-</head>
-<body>
-    <h1>Enter Country Code</h1>
-    <form method="post" action="{% url 'process_country_code' %}">
-        {% csrf_token %}
-        <label for="country_code">Country Code:</label>
-        <input type="text" id="country_code" name="country_code" placeholder="Enter country code" required>
-        <button type="submit">Submit</button>
-    </form>
-</body>
-</html> {% endcomment %}

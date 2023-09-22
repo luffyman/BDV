@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Data Result</title>
+</head>
+<body>
+    <h1>Bank Data</h1>
+    <ul>
+        {% for bank in bank_data %}
+            <li>{{ bank.name }} - {{ bank.status }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
